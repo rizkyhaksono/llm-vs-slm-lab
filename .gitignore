@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+.jupyter/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets — JANGAN commit API key
+.env
+*.env.local
+
+# Data (download via script di data/download_datasets.py)
+data/raw/
+data/cache/
+data/*.csv
+data/*.parquet
+data/*.jsonl
+!data/README.md
+!data/download_datasets.py
+
+# Models — GGUF besar, HF cache di ~/.cache by default
+models/*.gguf
+models/*.bin
+models/*.safetensors
+models/checkpoints/
+models/finetuned/
+!models/README.md
+!models/.gitkeep
+
+# Logs & runs
+*.log
+runs/
+mlruns/
+wandb/
+.claude/
