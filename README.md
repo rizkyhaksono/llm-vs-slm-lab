@@ -2,8 +2,6 @@
 
 Jurnal belajar membedakan **Large Language Model (LLM)** vs **Small Language Model (SLM)** — fokus ke perbandingan praktis: kapan pakai yang mana, biaya & latency, fine-tuning ringan, dan studi kasus konkret.
 
-> Target pembaca: software engineer / AI engineer yang sudah bisa Python tapi belum pernah pegang LLM/SLM lebih dari sekadar pakai ChatGPT. Hardware **CPU-only** — tidak butuh GPU.
-
 ---
 
 ## Filosofi Repo Ini
@@ -71,8 +69,6 @@ Helper `get_secret()` di [utils/llm_clients.py](utils/llm_clients.py) otomatis b
 | [03-finetuning-praktis/](03-finetuning-praktis/) | Fine-tune DistilBERT untuk sentiment Bahasa | 2–3 jam |
 | [04-case-study/](04-case-study/) | Klasifikasi, summarization, QA — LLM vs SLM head-to-head | 3–5 jam |
 | [05-kapan-pakai-apa/](05-kapan-pakai-apa/) | Decision framework + mini project | 2–3 jam |
-
-**Total: 2–3 weekend santai.**
 
 ### 3. Cara baca notebook
 
