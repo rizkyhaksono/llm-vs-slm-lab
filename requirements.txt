@@ -11,7 +11,11 @@ torch>=2.2
 
 # HuggingFace stack
 transformers>=4.44
-datasets>=2.20
+# CATATAN: datasets DIPIN ke <3.0 karena indonlp/indonlu & SEACrowd datasets
+# masih script-based (loading script Python). datasets>=3.0 hapus dukungan
+# script loading → load_dataset(\"indonlp/indonlu\", \"smsa\") gagal.
+# Pin ini bisa dihapus kalau dataset sudah migrasi ke parquet.
+datasets>=2.20,<3.0
 tokenizers>=0.19
 accelerate>=0.33
 evaluate>=0.4
